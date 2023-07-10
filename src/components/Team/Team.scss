@@ -1,0 +1,83 @@
+.team {
+    margin-top: 50px;
+
+    &__title {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 50px;
+
+        @media (max-width: 700px) {
+            margin-bottom: 38px;
+        }
+    }
+
+    &__swiper {
+        @media (min-width: 991px) {
+            margin: 0px -40px;
+            padding: 0px 35px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #000;
+
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        .swiper-button-next {
+            right: 5px;
+        }
+
+        .swiper-button-prev {
+            left: 5px;
+        }
+    }
+}
+
+.member {
+    &__image {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 33px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        position: absolute;
+        bottom: 20px;
+        height: 33px;
+        background-color: #FFFFFF;
+        left: 0;
+
+        &::after {
+            content: url('../../img/team/InstagramS.png');
+            display: inline-block;
+            height: 27px;
+        }
+
+        @media (max-width: 700px) {
+            margin-bottom: 28px;
+            font-size: 18px;
+        }
+    }
+
+    &__images {
+        display: flex;
+    }
+
+    &__image {
+        flex: 1 1 auto;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

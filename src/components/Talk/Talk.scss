@@ -1,0 +1,128 @@
+.talk {
+    padding-top: 184px;
+    padding-bottom: 232px;
+
+    @media (max-width: 1400px) {
+        padding: 100px 0px 120px 0px;
+    }
+
+    @media (max-width: 1000px) {
+        padding: 80px 0px 70px 0px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 40px 0px 30px 0px;
+    }
+
+    &__container {
+        max-width: 1609px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    &__description {
+        max-width: 921px;
+        margin: 0 auto;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        font-size: 24px;
+        line-height: 33px;
+        padding: 10px 20px;
+    }
+
+    &__form {
+        max-width: 921px;
+        margin: 0 auto;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 20px 70px;
+        margin-top: 58px;
+        margin-bottom: 23px;
+        padding-right: 88px;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+
+        @media (max-width: 600px) {
+            padding: 20px 30px;
+        }
+    }
+
+    &__label {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    &__input {
+        display: block;
+        background: #EEEEEE;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        font-size: 24px;
+        color: #000;
+        line-height: 33px;
+        max-width: 353px;
+        padding: 10px 15px;
+
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    &__area {
+        resize: none;
+        max-width: none;
+        min-height: 146px;
+    }
+
+    &__btn {
+        background: #F5F5F5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        font-size: 24px;
+        padding: 9px 0px;
+        line-height: 33px;
+        color: #000000;
+        width: 195px;
+        align-self: center;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__social {
+        transition: all .3s ease-out;
+
+        &:nth-child(1) {
+            &:hover {
+                filter: drop-shadow(0px 5px 4px #FF9900);
+            }
+        }
+
+        &:nth-child(2) {
+            &:hover {
+                filter: drop-shadow(0px 5px 4px #001AFF);
+            }
+        }
+
+        &:nth-child(3) {
+            &:hover {
+                filter: drop-shadow(0px 5px 4px #00F0FF);
+            }
+        }
+    }
+}
+
+.error-text {
+    align-self: flex-start;
+    font-size: 24px;
+    line-height: 33px;
+    background: #FB7F7F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 4px 13px;
+}
